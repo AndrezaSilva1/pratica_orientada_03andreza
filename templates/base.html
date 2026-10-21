@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca</title>
+</head>
+<body>
+    <h1>O sistema de bilbioteca</h1>
+    <nav>
+        <a href="{{ url_for('index') }}">O incio</a> |
+        <a href="{{ url_for('novo_usuario') }}">Ccadastra usuario</a> |
+        <a href="{{ url_for('novo_livro') }}">cadastro o livro</a>
+    </nav>
+    <hr>
+    {% block conteudo %}{% endblock %}
+</body>
+</html>
